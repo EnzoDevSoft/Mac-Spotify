@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="logo">
+                <a href="#"><img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Spotify Logo"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <span class="fa fa-home"></span>
+                            <span>Ínicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-search"></span>
+                            <span>Pesquisar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                             <span class="fa fas fa-book"></span>
+                            <span>Sua Biblioteca</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="menu-create">
+                 <ul>
+                    <li>
+                        <a href="#">
+                             <span class="fa fa-plus"></span>
+                            <span>Criar Playlist</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                             <span class="fa fa-heart"></span>
+                            <span>Músicas Curtidas</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="divider">
+
+            <div class="playlists">
+                <div class="playlist-item">
+                    <img src="assets-spotify/ab6761610000e5ebc9aca5b6d4c528caf75e8a1d.jpg" alt="Playlist Cover">
+                    <div class="playlist-item-info">
+                        <span class="playlist-name">Mac DeMarco</span>
+                        <span class="playlist-type">Playlist • Enzo.gattelli7...</span>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <img src="assets-spotify/artworks-ua0s7LdiRVJsCqDl-mT6JPQ-t500x500.jpg" alt="Playlist Cover">
+                    <div class="playlist-item-info">
+                        <span class="playlist-name">Cardio</span>
+                        <span class="playlist-type">Playlist • Enzo.gattelli7...</span>
+                    </div>
+                </div>
+                 <div class="playlist-item">
+                    <img src="assets-spotify/2fa5618b85684d39538a265cdc8c32f5.jpg" alt="Playlist Cover">
+                    <div class="playlist-item-info">
+                        <span class="playlist-name">Run Rock</span>
+                        <span class="playlist-type">Playlist • Spotify</span>
+                    </div>
+                </div>
+                 <div class="playlist-item">
+                    <img src="assets-spotify/Captura de tela 2025-06-20 165041.png" alt="Playlist Cover">
+                    <div class="playlist-item-info">
+                        <span class="playlist-name">Phonk</span>
+                        <span class="playlist-type">Playlist • Spotify</span>
+                    </div>
+                </div>
+
+                <div class="playlist-item">
+                    <img src="assets-spotify/mj.jpg" alt="Playlist Cover">
+                    <div class="playlist-item-info">
+                        <span class="playlist-name">🏀</span>
+                        <span class="playlist-type">Playlist • Enzo.gattelli7...</span>
+                    </div>
+                </div>
+
+                <div class="playlist-item">
+                    <img src="assets-spotify/frank.webp" alt="Playlist Cover">
+                    <div class="playlist-item-info">
+                        <span class="playlist-name">Jazz</span>
+                        <span class="playlist-type">Playlist • Spotify</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="mobile-header-background"></div>
+
+            <div class="playlist-header">
+                <div class="header-top">
+                    <div class="header-arrows">
+                         <div class="arrow-container"><img src="https://api.iconify.design/solar:alt-arrow-left-bold.svg?color=white" alt="Left Arrow"></div>
+                        <div class="arrow-container"><img src="https://api.iconify.design/solar:alt-arrow-right-bold.svg?color=white" alt="Right Arrow"></div>
+                    </div>
+                    <div class="header-user">
+                        <div class="user-icon-container">
+                            <img src="assets-spotify/mjordan.jpg" alt="Foto de Perfil">
+                        </div>
+                        <span>Enzo.gattelli7...</span>
+                    </div>
+                </div>
+                <div class="playlist-content">
+                    <div class="playlist-cover">
+                        <img src="assets-spotify/ab6761610000e5ebc9aca5b6d4c528caf75e8a1d.jpg" alt="Playlist Cover">
+                    </div>
+                    <div class="playlist-info">
+                        <div class="playlist-public">Playlist Pública</div>
+                        <div class="playlist-title">Mac DeMarco</div>
+                        <div class="playlist-description">Minhas favoritas de Mac DeMarco</div>
+                        <div class="playlist-stats">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" width="24px" height="24px" alt="Spotify Logo Icon">
+                            <span> Spotify •</span>
+                            <span>5 curtidas • </span>
+                            <span>20 músicas, </span>
+                            <span>1h 4min </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist-songs-container">
+                <div class="playlist-buttons">
+                    <div class="playlist-buttons-left">
+                        <div class="playlist-buttons-resume-pause"><img src="https://api.iconify.design/solar:play-bold.svg?color=black" alt="Play Icon"></div>
+                        <div class="playlist-buttons-like"></div>
+                        <div class="playlist-buttons-download">
+                            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="playlist-buttons-three-dot"></div>
+                    </div>
+                    <div class="playlist-buttons-right">
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="playlist-songs">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Título</th>
+                                <th>Álbum</th>
+                                <th>Adicionada em</th>
+                                <th><i class="fa fa-clock"></i></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="song-index">1</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/0x1900-000000-80-0-0.jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">Chamber of Reflection</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">Salad Days</td>
+                                <td class="song-date-added">19 de Maio de 2021</td>
+                                <td class="song-duration">3:51</td>
+                            </tr>
+                            <tr>
+                                <td class="song-index">2</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/0x1900-000000-80-0-0 (1).jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">For the Fisrt Time</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">This Old Dog</td>
+                                <td class="song-date-added">19 de Maio de 2021</td>
+                                <td class="song-duration">3:02</td>
+                            </tr>
+                            <tr>
+                                <td class="song-index">3</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/500x500.jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">No Other Heart</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">Another One</td>
+                                <td class="song-date-added">21 de Maio de 2021</td>
+                                <td class="song-duration">2:53</td>
+                            </tr>
+                            <tr>
+                                <td class="song-index">4</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/1900x1900-000000-80-0-0.jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">My Kind of Woman</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">2</td>
+                                <td class="song-date-added">22 de Maio de 2021</td>
+                                <td class="song-duration">3:10</td>
+                            </tr>
+                            <tr>
+                                <td class="song-index">5</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/1900x1900-000000-80-0-0.jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">Freaking Out the Neighborhood</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">2</td>
+                                <td class="song-date-added">22 de Maio de 2021</td>
+                                <td class="song-duration">2:53</td>
+                            </tr>
+                            <tr>
+                                <td class="song-index">6</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/0x1900-000000-80-0-0 (1).jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">Watching Him Fade Away</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">This Old Dog</td>
+                                <td class="song-date-added">25 de Maio de 2021</td>
+                                <td class="song-duration">2:23</td>
+                            </tr>
+                            <tr>
+                                <td class="song-index">7</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/a1786551049_5.jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">20191009 I Like Her</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">One Wayne G</td>
+                                <td class="song-date-added">25 de Maio de 2021</td>
+                                <td class="song-duration">2:16</td>
+                            </tr>
+                            <tr>
+                                <td class="song-index">8</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/0x1900-000000-80-0-0 (1).jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">Still Beating</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">This Old Dog</td>
+                                <td class="song-date-added">26 de Maio de 2021</td>
+                                <td class="song-duration">3:01</td>
+                            </tr>
+
+                            <tr>
+                                <td class="song-index">9</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/0x1900-000000-80-0-0 (1).jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">Moonlight on the River</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">This Old Dog</td>
+                                <td class="song-date-added">27 de Maio de 2021</td>
+                                <td class="song-duration">7:02</td>
+                            </tr>
+
+                            <tr>
+                                <td class="song-index">10</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/500x500.jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">Another One</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">Another One</td>
+                                <td class="song-date-added">27 de Maio de 2021</td>
+                                <td class="song-duration">2:40</td>
+                            </tr>
+
+                            <tr>
+                                <td class="song-index">11</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/macdemarco.jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">Nobody</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">Here Comes The Cowboy</td>
+                                <td class="song-date-added">27 de Maio de 2021</td>
+                                <td class="song-duration">3:32</td>
+                            </tr>
+
+                            <tr>
+                                <td class="song-index">12</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/macdemarco.jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">On The Square</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">Here Comes The Cowboy</td>
+                                <td class="song-date-added">27 de Maio de 2021</td>
+                                <td class="song-duration">3:29</td>
+                            </tr>
+
+                            <tr>
+                                <td class="song-index">13</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/0x1900-000000-80-0-0.jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">Goodbye Weekend</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">Salad Days</td>
+                                <td class="song-date-added">28 de Maio de 2021</td>
+                                <td class="song-duration">2:59</td>
+                            </tr>
+
+                            <tr>
+                                <td class="song-index">14</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/a1786551049_5.jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">20200820 Turn My TV On</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">One Wayne G</td>
+                                <td class="song-date-added">28 de Maio de 2021</td>
+                                <td class="song-duration">3:00</td>
+                            </tr>
+
+                            <tr>
+                                <td class="song-index">15</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/1900x1900-000000-80-0-0.jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">Dreaming</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">2</td>
+                                <td class="song-date-added">29 de Maio de 2021</td>
+                                <td class="song-duration">2:27</td>
+                            </tr>
+
+                            <tr>
+                                <td class="song-index">16</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/500x500.jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">A Heart Like Hers</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">Another One</td>
+                                <td class="song-date-added">29 de Maio de 2021</td>
+                                <td class="song-duration">4:01</td>
+                            </tr>
+
+                            <tr>
+                                <td class="song-index">17</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/500x500.jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">Without Me</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">Another One</td>
+                                <td class="song-date-added">29 de Maio de 2021</td>
+                                <td class="song-duration">2:57</td>
+                            </tr>
+
+                            <tr>
+                                <td class="song-index">18</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/0x1900-000000-80-0-0 (1).jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">One More Love Song</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">This Old Dog</td>
+                                <td class="song-date-added">30 de Maio de 2021</td>
+                                <td class="song-duration">4:01</td>
+                            </tr>
+
+                            <tr>
+                                <td class="song-index">19</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/Captura de tela 2025-06-20 162539.png" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">Another(Demo)One #2</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">Another(Demo)One</td>
+                                <td class="song-date-added">30 de Maio de 2021</td>
+                                <td class="song-duration">2:46<td>
+                            </tr>
+
+                            <tr>
+                                <td class="song-index">20</td>
+                                <td class="song-title">
+                                    <div class="song-image"><img src="assets-spotify/0x1900-000000-80-0-0.jpg" alt="Song Cover"></div>
+                                    <div class="song-name-album">
+                                        <div class="song-name">Blue Boy</div>
+                                        <div class="song-artist">Mac DeMarco</div>
+                                    </div>
+                                </td>
+                                <td class="song-album">Salad Days</td>
+                                <td class="song-date-added">30 de Maio de 2021</td>
+                                <td class="song-duration">2:06</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-player">
+        <div class="now-playing">
+            <img src="assets-spotify/0x1900-000000-80-0-0.jpg" alt="Now Playing Cover" class="now-playing-cover">
+            <div class="now-playing-info">
+                <a href="#" class="song-name">Chamber of Reflection</a>
+                <a href="#" class="song-artist">Mac DeMarco</a>
+            </div>
+            <img src="https://api.iconify.design/solar:heart-bold.svg?color=%231DB954" alt="Like" class="now-playing-like">
+        </div>
+        <div class="player-controls">
+            <div class="player-buttons">
+                <img src="https://api.iconify.design/solar:shuffle-bold.svg?color=white" alt="Shuffle" class="gray-filtered">
+                <img src="https://api.iconify.design/solar:skip-previous-bold.svg?color=white" alt="Previous" class="gray-filtered">
+                <div class="play-button-container"><img src="https://api.iconify.design/solar:play-bold.svg?color=black" alt="Play"></div>
+                <img src="https://api.iconify.design/solar:skip-next-bold.svg?color=white" alt="Next" class="gray-filtered">
+                <img src="https://api.iconify.design/solar:repeat-one-bold.svg?color=white" alt="Repeat" class="gray-filtered">
+            </div>
+            <div class="player-slider">
+                <span class="player-time">1:38</span>
+                <input type="range" min="1" max="100" value="30" class="progress-bar">
+                <span class="player-time">3:51</span>
+            </div>
+        </div>
+        <div class="volume-controls">
+             <img src="https://api.iconify.design/solar:microphone-3-bold.svg?color=white" alt="Lyrics" class="gray-filtered">
+            <img src="https://api.iconify.design/solar:list-down-minimalistic-bold.svg?color=white" alt="Queue" class="gray-filtered">
+            <img src="https://api.iconify.design/solar:laptop-minimalistic-bold.svg?color=white" alt="Devices" class="gray-filtered">
+            <img src="https://api.iconify.design/solar:volume-loud-bold.svg?color=white" alt="Volume" class="gray-filtered">
+            <input type="range" min="1" max="100" value="80" class="volume-slider">
+        </div>
+        
+        <div class="mobile-footer-icons">
+            <img class="headphone-icon" src="https://api.iconify.design/solar:headphones-round-sound-bold.svg?color=white" alt="Fone de Ouvido">
+            <div class="mobile-play-icon">
+                 <img src="https://api.iconify.design/solar:play-bold.svg?color=white" alt="Play">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
